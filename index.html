@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bus Depot - Yard Navigation Web Map</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Webmap CSS -->
+  <link rel="stylesheet"
+        href="bd_style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>GIS-Based Bus Depot Navigation System</h2>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Project</a>
+    <a href="#yard-map">Yard Map</a>
+    <a href="#data-table">Data Table</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h3>Home</h3>
+
+    <p>
+      This website presents a GIS-based navigation system
+      for Koyambedu CMBT, Chennai.
+    </p>
+  </section>
+
+  <!-- About Project Section -->
+  <section id="about">
+    <h3>About Project</h3>
+
+    <p>
+      The project displays important locations within and around
+      Koyambedu Bus Terminus using GeoJSON data,
+      LeafletJS and OpenStreetMap.
+    </p>
+  </section>
+
+  <!-- Yard Map Section -->
+  <section id="yard-map">
+    <h3>Yard Map</h3>
+
+    <!-- Leaflet Map -->
+    <div id="map"></div>
+    
+  <p class="route-info">
+    The map shows three navigation routes connecting important
+    locations within the Koyambedu Bus Terminus.
+  </p>
+  </section>
+
+  <!-- Data Table Section -->
+<section id="data-table">
+
+  <h3>Location Data</h3>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Cateory</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody id="table-body">
+    </tbody>
+
+  </table>
+
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>GIS Yard Navigation Project | Koyambedu CMBT, Chennai</p>
+  </footer>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Webmap JavaScript -->
+  <script src="bd_script.js"></script>
+
+</body>
+
+</html>
